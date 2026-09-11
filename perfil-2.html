@@ -1,19 +1,641 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil - Integrante 2</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil - Javier Nehuén López</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/perfil-2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicon/devicon@v2.15.0/devicon.min.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 
     <script src="js/script.js" defer></script>
-</head>
-<body>
+    <script src="js/perfil-2.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">🏠 Inicio</a>
+          </li>
+          <li>
+            <a href="index.html#perfiles">👤 Perfiles</a>
+          </li>
+          <li>
+            <a href="bitacora.html">📝 Bitácora</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-</body>
+    <main>
+      <h1 class="nombre-brillante">Javier Nehuén López</h1>
+
+      <div class="sphere-scene">
+      <div id="skills-arena">
+        <div class="sphere-core">
+          <model-viewer
+            src="./img/javier/face_model.glb"
+            alt="Modelo 3D de la cabeza de Javier"
+            auto-rotate
+            auto-rotate-delay="0"
+            rotation-per-second="-18deg"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            shadow-intensity="0"
+            exposure="1"
+            style="width:100%;height:100%;--poster-color:transparent;background-color:transparent;">
+          </model-viewer>
+        </div>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/lang/js.svg')" role="img" aria-label="Icono de JavaScript"></span><span>JavaScript</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/lang/ts.svg')" role="img" aria-label="Icono de TypeScript"></span><span>TypeScript</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/lang/python.svg')" role="img" aria-label="Icono de Python"></span><span>Python</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/lang/kotlin.svg')" role="img" aria-label="Icono de Kotlin"></span><span>Kotlin</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/lang/php.svg')" role="img" aria-label="Icono de PHP"></span><span>PHP</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/html5.svg')" role="img" aria-label="Icono de HTML5"></span><span>HTML5</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/ejs.svg')" role="img" aria-label="Icono de EJS"></span><span>EJS</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/handlebarsjs-icon.svg')" role="img" aria-label="Icono de Handlebars"></span><span>Handlebars</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/next.svg')" role="img" aria-label="Icono de Next.js"></span><span>Next.js</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/react.svg')" role="img" aria-label="Icono de React"></span><span>React</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/angular.svg')" role="img" aria-label="Icono de Angular 17"></span><span>Angular 17</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/vue.svg')" role="img" aria-label="Icono de Vue"></span><span>Vue</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/expo.svg')" role="img" aria-label="Icono de Expo"></span><span>Expo</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/ionic.svg')" role="img" aria-label="Icono de Ionic v7"></span><span>Ionic v7</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/redux.svg')" role="img" aria-label="Icono de Redux"></span><span>Redux</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/reactquery.svg')" role="img" aria-label="Icono de React Query"></span><span>React Query</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/front/vite.svg')" role="img" aria-label="Icono de Vite"></span><span>Vite</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/backend/nodedotjs.svg')" role="img" aria-label="Icono de Node.js"></span><span>Node.js</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/backend/express.svg')" role="img" aria-label="Icono de Express.js"></span><span>Express.js</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/backend/nest.svg')" role="img" aria-label="Icono de Nest.js"></span><span>Nest.js</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/backend/django.svg')" role="img" aria-label="Icono de Django"></span><span>Django</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/backend/socketdotio.svg')" role="img" aria-label="Icono de WebSockets"></span><span>WebSockets</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/backend/jsonwebtokens.svg')" role="img" aria-label="Icono de JWT/Bcrypt"></span><span>JWT / Bcrypt</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/backend/firebase.svg')" role="img" aria-label="Icono de Firebase"></span><span>Firebase</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/postgresql.svg')" role="img" aria-label="Icono de PostgreSQL"></span><span>PostgreSQL</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/mysql.svg')" role="img" aria-label="Icono de MySQL"></span><span>MySQL</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/mongodb.svg')" role="img" aria-label="Icono de MongoDB"></span><span>MongoDB</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/sqlite.svg')" role="img" aria-label="Icono de SQLite"></span><span>SQLite</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/firestore.svg')" role="img" aria-label="Icono de Firestore"></span><span>Firestore</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/typeorm.svg')" role="img" aria-label="Icono de TypeORM"></span><span>TypeORM</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/sequelize.svg')" role="img" aria-label="Icono de Sequelize"></span><span>Sequelize</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/mongoose.svg')" role="img" aria-label="Icono de Mongoose"></span><span>Mongoose</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/apollo.svg')" role="img" aria-label="Icono de Apollo"></span><span>Apollo</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/database/graphql.svg')" role="img" aria-label="Icono de GraphQL"></span><span>GraphQL</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/cloud/aws.svg')" role="img" aria-label="Icono de AWS"></span><span>AWS</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/docker.svg')" role="img" aria-label="Icono de Docker"></span><span>Docker</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/cloud/githubactions.svg')" role="img" aria-label="Icono de GitHub Actions"></span><span>GitHub Actions</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/hosting/vercel.svg')" role="img" aria-label="Icono de Vercel"></span><span>Vercel</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/hosting/netlify.svg')" role="img" aria-label="Icono de Netlify"></span><span>Netlify</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/hosting/render.svg')" role="img" aria-label="Icono de Render"></span><span>Render</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/cloud/supabase.svg')" role="img" aria-label="Icono de Supabase"></span><span>Supabase</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/ui/tailwind.svg')" role="img" aria-label="Icono de Tailwind CSS"></span><span>Tailwind CSS</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/ui/bootstrap.svg')" role="img" aria-label="Icono de Bootstrap"></span><span>Bootstrap</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/ui/mui.svg')" role="img" aria-label="Icono de Material UI"></span><span>Material UI</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/ui/styled.svg')" role="img" aria-label="Icono de Styled Components"></span><span>Styled Components</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/jest.svg')" role="img" aria-label="Icono de Jest"></span><span>Jest</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/cypress.svg')" role="img" aria-label="Icono de Cypress"></span><span>Cypress</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/mocha.svg')" role="img" aria-label="Icono de Mocha"></span><span>Mocha</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/ai/chatGPT.svg')" role="img" aria-label="Icono de ChatGPT"></span><span>ChatGPT</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/ai/claude.svg')" role="img" aria-label="Icono de Claude"></span><span>Claude</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/ai/codeium.svg')" role="img" aria-label="Icono de Codeium"></span><span>Codeium</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/figma.svg')" role="img" aria-label="Icono de Figma"></span><span>Figma</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/github.svg')" role="img" aria-label="Icono de GitHub"></span><span>GitHub</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/gitlab.svg')" role="img" aria-label="Icono de GitLab"></span><span>GitLab</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/jira.svg')" role="img" aria-label="Icono de Jira"></span><span>Jira</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/notion.svg')" role="img" aria-label="Icono de Notion"></span><span>Notion</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/postman.svg')" role="img" aria-label="Icono de Postman"></span><span>Postman</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/storybook.svg')" role="img" aria-label="Icono de Storybook"></span><span>Storybook</span></li>
+        <li class="skill-item"><span class="skill-icono" style="--icono:url('../img/javier/icons/tools/swagger.svg')" role="img" aria-label="Icono de Swagger"></span><span>Swagger</span></li>
+      </div>
+      </div>
+
+      <h2 id="titulo-sobre-mi">Sobre mí</h2>
+
+      <section class="sobre-mi" aria-labelledby="titulo-sobre-mi">
+        <p class="sobre-mi-contacto">
+          Buenos Aires, Argentina
+          &middot; <a href="mailto:javiernehuenlopez@gmail.com">javiernehuenlopez@gmail.com</a>
+          &middot; <a href="https://www.linkedin.com/in/javier-nehuen-lopez" target="_blank" rel="noopener">LinkedIn</a>
+          &middot; <a href="https://github.com/Jableed43" target="_blank" rel="noopener">GitHub</a>
+          &middot; <a href="https://jableed43.github.io/portfolio-2025/" target="_blank" rel="noopener">Portfolio</a>
+        </p>
+
+        <h3>Resumen Profesional</h3>
+        <p>
+          Desarrollador Full Stack, Tech Lead y Líder en Educación Tecnológica con más de 4 años de
+          experiencia entregando aplicaciones web y móviles escalables y formando a más de 2.500
+          desarrolladores en instituciones líderes. Diseño arquitecturas de software robustas,
+          optimizo APIs REST/GraphQL e implemento patrones Server-Driven UI, a la vez que lidero
+          equipos y diseño currículos técnicos de alto impacto. Me destaco por mi enfoque de
+          resolución estructurada y evaluación de riesgos, y por convertir requerimientos de negocio
+          complejos en sistemas de alto rendimiento.
+        </p>
+        <p>
+          Esa misma curiosidad la llevo fuera del código: me vas a encontrar salteando verduras en
+          la sartén, soldando algún circuito por diversión, tocando la guitarra, jugando algún
+          clásico de mi colección —de Half-Life a Kirby— o viendo una buena película con un disco
+          de fondo. Programar, cocinar, armar circuitos y hacer música terminan siendo la misma
+          curiosidad aplicada a distintos problemas.
+        </p>
+      </section>
+
+      <h2 id="titulo-habilidades">Habilidades</h2>
+
+      <ul class="filtros" id="filtros-habilidades">
+        <li data-filtro="cocina" class="activo">Cocina</li>
+        <li data-filtro="electronica">Electrónica</li>
+        <li data-filtro="musica">Música</li>
+        <li data-filtro="sobrenaturales">Habilidades sobrenaturales</li>
+      </ul>
+
+      <section class="skill-block" data-categoria="cocina">
+        <h3>Cocina</h3>
+        <div class="skill-fila">
+          <div class="skill-visual skill-visual--cocina">
+            <div class="fuego-contenedor">
+              <img src="./img/javier/skills/flames.gif" alt="" aria-hidden="true">
+            </div>
+            <div class="ingrediente" style="left:40%; animation-delay:0s;">🧅</div>
+            <div class="ingrediente" style="left:40%; animation-delay:0.8s;">🍅</div>
+            <div class="ingrediente" style="left:40%; animation-delay:1.6s;">🥕</div>
+            <div class="ingrediente" style="left:40%; animation-delay:2.4s;">🍄</div>
+            <div class="ingrediente" style="left:40%; animation-delay:3.2s;">🥦</div>
+            <img class="sarten-img" src="./img/javier/skills/pan.webp" alt="Sartén">
+          </div>
+          <div class="skill-lista">
+            <h4>Recetas favoritas</h4>
+            <ul>
+              <li>Tacos/Burritos</li>
+              <li>Carne desmechada</li>
+              <li>Tortilla de papa</li>
+              <li>Pastas caseras</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="skill-block" data-categoria="electronica">
+        <h3>Electrónica</h3>
+        <div class="skill-fila">
+          <div class="skill-visual skill-visual--electronica">
+            <img class="pcb-img" src="./img/javier/skills/pcb.webp" alt="Placa electrónica">
+            <div class="soldador-contenedor">
+              <img src="./img/javier/skills/soldador.gif" alt="Cautín soldando">
+            </div>
+          </div>
+          <div class="skill-lista">
+            <h4>Temas de interés</h4>
+            <ul>
+              <li>Microcontroladores (Arduino, ESP32)</li>
+              <li>Diseño de placas (PCB)</li>
+              <li>Domótica IoT</li>
+              <li>Construcción de prototipos</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="skill-block" data-categoria="musica">
+        <h3>Música</h3>
+        <div class="skill-fila">
+          <div class="skill-visual skill-visual--musica">
+            <img class="guitarra-img" src="./img/javier/skills/guitar.gif" alt="Guitarra eléctrica">
+          </div>
+          <div class="skill-lista">
+            <h4>Habilidades</h4>
+            <ul>
+              <li>Producción musical</li>
+              <li>Cantar</li>
+              <li>Tocar Guitarra</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="skill-block" data-categoria="sobrenaturales">
+        <h3>Habilidades sobrenaturales</h3>
+        <div class="skill-fila">
+          <div class="skill-visual">
+            <img class="guitarra-img" src="./img/javier/skills/orb.gif" alt="Guitarra eléctrica">
+          </div>
+          <div class="skill-lista">
+            <h4>Habilidades dominadas</h4>
+            <ul>
+              <li>Clarividencia</li>
+              <li>Clarisentencia</li>
+              <li>Proyección astral</li>
+              <li>Clariaudiencia</li>
+              <li>Sanación</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <h2 id="titulo-peliculas">Películas favoritas</h2>
+
+      <section class="carousel" aria-labelledby="titulo-peliculas" data-etiqueta-slide="la película">
+        <button type="button" class="carousel-flecha carousel-flecha--prev" aria-label="Película anterior">&#10094;</button>
+
+        <div class="carousel-ventana">
+          <ul class="carousel-pista" id="carousel-pista-peliculas">
+            <li class="carousel-slide">
+              <h3>Paprika</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/PIUqozzyW2k" title="Paprika" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Parasite</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/5xH0HfJHsaY" title="Parasite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Inglourious Basterds</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/KnrRy6kSFF0" title="Inglourious Basterds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Pulp Fiction</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/tGpTpVyI_OQ" title="Pulp Fiction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Taxi Driver</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/T5IligQP7Fo" title="Taxi Driver" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>The Lord of the Rings: The Two Towers</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/LbfMDwc4azU" title="The Lord of the Rings: The Two Towers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>The Fifth Element</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/fQ9RqgcR24g" title="The Fifth Element" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Home Alone</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/jEDaVHmw7r4" title="Home Alone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>The Butterfly Effect</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/kkWQLjI2rAU" title="The Butterfly Effect" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Men in Black</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/UxUTTrU6PA4" title="Men in Black" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>El viaje de Chihiro</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/RyKtKd9KnJI" title="El viaje de Chihiro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Shrek 2</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/7DJ5sop9oSc" title="Shrek 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Signs</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/dUw26F0WfLg" title="Signs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="carousel-flecha carousel-flecha--next" aria-label="Película siguiente">&#10095;</button>
+
+        <div class="carousel-puntos" id="carousel-puntos-peliculas"></div>
+      </section>
+
+      <h2 id="titulo-discos">Discos favoritos</h2>
+
+      <section class="carousel" aria-labelledby="titulo-discos" data-etiqueta-slide="el disco">
+        <button type="button" class="carousel-flecha carousel-flecha--prev" aria-label="Disco anterior">&#10094;</button>
+
+        <div class="carousel-ventana">
+          <ul class="carousel-pista" id="carousel-pista-discos">
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/5gohS1223mJrzBVQzakpjm?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/2vtpI9pQJFi5uOBptAu7Fp?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/2rIdWbXPjcq8K7BCccBhhC?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/7m2tf0ePYJ5AqHuD0qjvLx?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/7tZMfTQrPSM7STInq5mDed?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/2jPmk6qQzuY5AvKkZxMh7h?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/748dZDqSZy6aPXKcI9H80u?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/4Gfnly5CzMJQqkUFfoHaP3?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/1rQZbncicoXyB64DqoH7OY?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="carousel-flecha carousel-flecha--next" aria-label="Disco siguiente">&#10095;</button>
+
+        <div class="carousel-puntos" id="carousel-puntos-discos"></div>
+      </section>
+
+      <h2 id="titulo-juegos">Juegos favoritos</h2>
+
+      <section class="juegos-grid" aria-labelledby="titulo-juegos">
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Half-Life">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/Half-Life_Cover_Art.jpg" alt="Half-Life" loading="lazy">
+              <p>Half-Life</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>FPS (Disparos en primera persona), Ciencia ficción</p>
+              <p>1998</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Blasphemous">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/Blasphemous_(video_game).jpg" alt="Blasphemous" loading="lazy">
+              <p>Blasphemous</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Metroidvania, Acción / Hack and Slash</p>
+              <p>2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Mario Kart 8">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/mario_kart_8.jfif" alt="Mario Kart 8" loading="lazy">
+              <p>Mario Kart 8</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Carreras karts</p>
+              <p>2014</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Mortal Kombat X">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/Mortal_Kombat_X_Cover_Art.png" alt="Mortal Kombat X" loading="lazy">
+              <p>Mortal Kombat X</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Pelea / Lucha</p>
+              <p>2015</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Hollow Knight">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/hollow_knight.jpg" alt="Hollow Knight" loading="lazy">
+              <p>Hollow Knight</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Metroidvania, Acción y Aventura</p>
+              <p>2017</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Zelda: Breath of the Wild">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/The_Legend_of_Zelda_Breath_of_the_Wild.jpg" alt="Zelda: Breath of the Wild" loading="lazy">
+              <p>Zelda: Breath of the Wild</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Acción y Aventura, Rol (RPG) de mundo abierto</p>
+              <p>2017</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Kirby's Dream Land 3">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/kirby_dreamland_3.jpg" alt="Kirby's Dreamland 3" loading="lazy">
+              <p>Kirby's Dreamland 3</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Plataformas 2D</p>
+              <p>1997</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Super Smash Bros. Melee">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/smash_bros_melee.jpg" alt="Super Smash Bros. Melee" loading="lazy">
+              <p>Super Smash Bros. Melee</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Pelea / Lucha de plataformas</p>
+              <p>2001</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Earthworm Jim">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/Earthworm_Jim_Neutral_Cover.jpg" alt="Earthworm Jim" loading="lazy">
+              <p>Earthworm Jim</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Run and Gun, Plataformas 2D</p>
+              <p>1994</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Metal Slug 3">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/Metal-slug-3_Artwork.webp" alt="Metal Slug 3" loading="lazy">
+              <p>Metal Slug 3</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Run and Gun, Acción arcade</p>
+              <p>2000</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Resident Evil 3">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/Resident_Evil_3_Cover.jpg" alt="Resident Evil 3" loading="lazy">
+              <p>Resident Evil 3</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Survival Horror</p>
+              <p>1999</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Castlevania: Symphony of the Night">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/castlevania.jpg" alt="Castlevania: Symphony of the Night" loading="lazy">
+              <p>Castlevania: Symphony of the Night</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Metroidvania, Acción y Rol</p>
+              <p>1997</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Indigo Prophecy">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/indigo_prophecy.jpg" alt="Indigo Prophecy" loading="lazy">
+              <p>Indigo Prophecy</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Aventura gráfica, Drama interactivo</p>
+              <p>2005</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Darkest Dungeon">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/darkest_dungeon.jfif" alt="Darkest Dungeon" loading="lazy">
+              <p>Darkest Dungeon</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Rol (RPG) por turnos, Roguelike</p>
+              <p>2016</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Sonic & Knuckles">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/Sonic_knuckles.jpg" alt="Sonic & Knuckles" loading="lazy">
+              <p>Sonic &amp; Knuckles</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Plataformas 2D</p>
+              <p>1994</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Super Mario Bros. 3">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/Super_Mario_Bros._3_coverart.png" alt="Super Mario Bros. 3" loading="lazy">
+              <p>Super Mario Bros. 3</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Plataformas 2D</p>
+              <p>1988</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de Final Fantasy X">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/final_fantasy_x.jpg" alt="Final Fantasy X" loading="lazy">
+              <p>Final Fantasy X</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>Rol (JRPG) por turnos</p>
+              <p>2001</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha de S.T.A.L.K.E.R.: Shadow of Chernobyl">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente">
+              <span class="juego-info-hint">+ info</span>
+              <img src="./img/javier/games/Shadow_of_Chernobyl_cover.jpg" alt="S.T.A.L.K.E.R.: Shadow of Chernobyl" loading="lazy">
+              <p>S.T.A.L.K.E.R.: Shadow of Chernobyl</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>FPS, Survival Horror, Rol</p>
+              <p>2007</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Trabajo Práctico 1 — Front End 2026</p>
+    </footer>
+  </body>
 </html>
