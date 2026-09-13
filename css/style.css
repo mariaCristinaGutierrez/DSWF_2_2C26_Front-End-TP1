@@ -20,7 +20,73 @@ body {
     grid-template-columns: 1fr; /* Una sola columna para tarjetas */
     gap: 20px;
 }
+/* ==========================================
+   ESTILOS PARA EL FOOTER
+   ========================================== */
 
+.pie-pagina {
+    background-color: #1e1e24;
+    color: #e0e0e0;
+    padding-top: 40px;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-seccion {
+    flex: 1 1 250px; /* Se acomoda dinámicamente según el tamaño de pantalla */
+}
+
+.footer-seccion h3, 
+.footer-seccion h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer-seccion p {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+.footer-seccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-seccion ul li {
+    margin-bottom: 8px;
+}
+
+.footer-seccion ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-seccion ul li a:hover {
+    color: #ff7b00; /* Color al pasar el mouse */
+}
+
+.footer-copyright {
+    text-align: center;
+    border-top: 1px solid #33333e;
+    margin-top: 30px;
+    padding: 15px 20px;
+    font-size: 0.85rem;
+    color: #777788;
+}
 
 /* ==========================================================================
    2. MEDIA QUERY: CELULAR MINIATURA / SMARTWATCHES
