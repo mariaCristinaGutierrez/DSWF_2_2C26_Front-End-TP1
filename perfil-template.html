@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil - Mi Nombre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicon/devicon@v2.15.0/devicon.min.css">
+
+    <script src="js/perfil.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Blue<span>Tech</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#perfiles">Perfiles</a></li>
+          <li><a href="bitacora.html">Bitácora</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="nombre-brillante">Mi Nombre</h1>
+
+      <img class="avatar-perfil" src="img/nombre/avatar.jpg" alt="Foto de Mi Nombre" width="160" height="160">
+
+      <div class="tecnologias-base" style="display: flex; gap: 1.5rem; justify-content: center; margin: 2rem 0; flex-wrap: wrap; list-style: none;">
+        <!-- Iconos base (Ejemplo usando Devicon, puedes usar los tuyos) -->
+        <i class="devicon-javascript-plain colored" style="font-size: 3rem;" title="JavaScript"></i>
+        <i class="devicon-html5-plain colored" style="font-size: 3rem;" title="HTML5"></i>
+        <i class="devicon-css3-plain colored" style="font-size: 3rem;" title="CSS3"></i>
+        <i class="devicon-git-plain colored" style="font-size: 3rem;" title="Git"></i>
+        <i class="devicon-github-original colored" style="font-size: 3rem;" title="GitHub"></i>
+      </div>
+
+      <h2 id="titulo-sobre-mi">Sobre mí</h2>
+
+      <section class="sobre-mi" aria-labelledby="titulo-sobre-mi">
+        <p class="sobre-mi-contacto" style="display: flex; gap: 1rem; justify-content: center; align-items: center; font-size: 1.2rem;">
+          <span style="font-size: 1rem;">📍 Ciudad, País</span>
+          <a href="mailto:correo@ejemplo.com" title="Email">✉️</a>
+          <a href="#" target="_blank" rel="noopener" title="LinkedIn">💼</a>
+          <a class="enlace-github" href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener" title="Portfolio">🌐</a>
+        </p>
+
+        <h3>Resumen Profesional</h3>
+        <p>
+          [Escribe aquí tu resumen profesional. Describe tu experiencia, tu enfoque como desarrollador y las tecnologías que más dominas.]
+        </p>
+        <p>
+          [Añade un párrafo extra sobre tus intereses fuera de la programación, pasatiempos, o curiosidades sobre ti para darle un toque más humano a tu perfil.]
+        </p>
+      </section>
+
+      <h2 id="titulo-habilidades">Habilidades</h2>
+
+      <ul class="filtros" id="filtros-habilidades">
+        <li data-filtro="categoria1" class="activo">Categoría 1</li>
+        <li data-filtro="categoria2">Categoría 2</li>
+      </ul>
+
+      <section class="skill-block" data-categoria="categoria1">
+        <h3>Categoría 1</h3>
+        <div class="skill-fila">
+          <div class="skill-visual" style="width:260px; height:220px; background:var(--color-border); display:flex; align-items:center; justify-content:center; border-radius:12px;">
+            <span style="color:var(--color-text-secondary);">[Imagen Placeholder]</span>
+          </div>
+          <div class="skill-lista">
+            <h4>[Título Descriptivo]</h4>
+            <ul>
+              <li>Ítem de habilidad 1</li>
+              <li>Ítem de habilidad 2</li>
+              <li>Ítem de habilidad 3</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="skill-block oculto" data-categoria="categoria2">
+        <h3>Categoría 2</h3>
+        <div class="skill-fila">
+          <div class="skill-visual" style="width:260px; height:220px; background:var(--color-border); display:flex; align-items:center; justify-content:center; border-radius:12px;">
+            <span style="color:var(--color-text-secondary);">[Imagen Placeholder]</span>
+          </div>
+          <div class="skill-lista">
+            <h4>[Título Descriptivo]</h4>
+            <ul>
+              <li>Ítem de habilidad 1</li>
+              <li>Ítem de habilidad 2</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <h2 id="titulo-peliculas">Películas favoritas</h2>
+
+      <section class="carousel" aria-labelledby="titulo-peliculas" data-etiqueta-slide="la película">
+        <button type="button" class="carousel-flecha carousel-flecha--prev" aria-label="Película anterior">&#10094;</button>
+
+        <div class="carousel-ventana">
+          <ul class="carousel-pista" id="carousel-pista-peliculas">
+            <li class="carousel-slide">
+              <h3>[Título de Película 1]</h3>
+              <div class="carousel-video" style="background:var(--color-border); display:flex; align-items:center; justify-content:center;">
+                <span style="color:var(--color-text-secondary);">[Video/Imagen Placeholder]</span>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>[Título de Película 2]</h3>
+              <div class="carousel-video" style="background:var(--color-border); display:flex; align-items:center; justify-content:center;">
+                <span style="color:var(--color-text-secondary);">[Video/Imagen Placeholder]</span>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>[Título de Película 3]</h3>
+              <div class="carousel-video" style="background:var(--color-border); display:flex; align-items:center; justify-content:center;">
+                <span style="color:var(--color-text-secondary);">[Video/Imagen Placeholder]</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="carousel-flecha carousel-flecha--next" aria-label="Película siguiente">&#10095;</button>
+
+        <div class="carousel-puntos" id="carousel-puntos-peliculas"></div>
+      </section>
+
+      <h2 id="titulo-discos">Discos favoritos</h2>
+
+      <section class="carousel" aria-labelledby="titulo-discos" data-etiqueta-slide="el disco">
+        <button type="button" class="carousel-flecha carousel-flecha--prev" aria-label="Disco anterior">&#10094;</button>
+
+        <div class="carousel-ventana">
+          <ul class="carousel-pista" id="carousel-pista-discos">
+            <li class="carousel-slide">
+              <div class="carousel-spotify" style="height:352px; background:var(--color-border); display:flex; align-items:center; justify-content:center;">
+                <span style="color:var(--color-text-secondary);">[Spotify Iframe Placeholder]</span>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify" style="height:352px; background:var(--color-border); display:flex; align-items:center; justify-content:center;">
+                <span style="color:var(--color-text-secondary);">[Spotify Iframe Placeholder]</span>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify" style="height:352px; background:var(--color-border); display:flex; align-items:center; justify-content:center;">
+                <span style="color:var(--color-text-secondary);">[Spotify Iframe Placeholder]</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="carousel-flecha carousel-flecha--next" aria-label="Disco siguiente">&#10095;</button>
+
+        <div class="carousel-puntos" id="carousel-puntos-discos"></div>
+      </section>
+
+      <h2 id="titulo-juegos">Algo extra de mí</h2>
+
+      <section class="juegos-grid" aria-labelledby="titulo-juegos">
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha 1">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente" style="background:var(--color-border); display:flex; flex-direction:column; align-items:center; justify-content:center;">
+              <span class="juego-info-hint">+ info</span>
+              <span style="margin:2rem 0; color:var(--color-text-secondary);">[Imagen]</span>
+              <p>[Título Frontal]</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>[Subtítulo o descripción]</p>
+              <p>[Dato Clave]</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha 2">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente" style="background:var(--color-border); display:flex; flex-direction:column; align-items:center; justify-content:center;">
+              <span class="juego-info-hint">+ info</span>
+              <span style="margin:2rem 0; color:var(--color-text-secondary);">[Imagen]</span>
+              <p>[Título Frontal]</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>[Subtítulo o descripción]</p>
+              <p>[Dato Clave]</p>
+            </div>
+          </div>
+        </div>
+        <div class="juego-card" tabindex="0" role="button" aria-label="Ver ficha 3">
+          <div class="juego-card-inner">
+            <div class="juego-card-frente" style="background:var(--color-border); display:flex; flex-direction:column; align-items:center; justify-content:center;">
+              <span class="juego-info-hint">+ info</span>
+              <span style="margin:2rem 0; color:var(--color-text-secondary);">[Imagen]</span>
+              <p>[Título Frontal]</p>
+            </div>
+            <div class="juego-card-dorso">
+              <p>[Subtítulo o descripción]</p>
+              <p>[Dato Clave]</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 BlueTech Proyecto. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

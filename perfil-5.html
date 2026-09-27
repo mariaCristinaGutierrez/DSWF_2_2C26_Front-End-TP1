@@ -1,78 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil - Damián Gorosito</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/header-footer.css">
 
-    <script src="js/script.js" defer></script>
-</head>
-<body>
-
+    <script src="js/perfil.js" defer></script>
+    <script src="js/damian.js" defer></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">← Volver al inicio</a>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">Blue<span>Tech</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#perfiles">Perfiles</a></li>
+          <li><a href="bitacora.html">Bitácora</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="contenedor-perfil">
-        <!-- Tarjeta Principal -->
-        <article class="tarjeta-perfil">
-            
-            <!-- Foto o Avatar -->
-            <div class="foto-perfil">
-                <img src="img/perfil-damian.jpg" alt="Foto de Damián Gorosito" width="100">
-            </div>
+    <main>
+      <h1 class="nombre-brillante">Damián Gorosito</h1>
 
-            <!-- Datos Personales Principales -->
-            <section class="encabezado-perfil">
-                <h1>Damián Gorosito</h1>
-                <p class="datos-basicos">📍 Buenos Aires, Argentina | 🎂 35 años</p>
-            </section>
+      <img class="avatar-perfil" src="img/damian/avatar.jpg" alt="Foto de Damián Gorosito" width="160" height="160">
 
-            <!-- Sección de Habilidades (4 requeridas) -->
-            <section class="seccion-info">
-                <h2>Habilidades</h2>
-                <ul class="lista-habilidades">
-                    <li>Python</li>
-                    <li>HTML5 & CSS3</li>
-                    <li>Lógica de programación</li>
-                    <li>Resolución de problemas</li>
-                </ul>
-            </section>
+      <h2 id="titulo-sobre-mi">Sobre mí</h2>
 
-            <!-- Sección de Películas Favoritas (3 requeridas) -->
-            <section class="seccion-info">
-                <h2>Películas Favoritas</h2>
-                <ol class="lista-favoritos">
-                    <li>El Señor de los Anillos</li>
-                    <li>El Gran Pez</li>
-                    <li>Pulp Fiction</li>
-                </ol>
-            </section>
+      <section class="sobre-mi" aria-labelledby="titulo-sobre-mi">
+        <p class="sobre-mi-contacto">📍 Buenos Aires, Argentina &middot; 🎂 35 años
+          &middot; <a class="enlace-github" href="https://github.com/damiangorosito" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </section>
 
-            <!-- Sección de Discos Favoritos (3 requeridos) -->
-            <section class="seccion-info">
-                <h2>Discos Favoritos</h2>
-                <ol class="lista-favoritos">
-                    <li>Creo - Callejeros</li>
-                    <li>Feed the Machine - Poor man's Poison</li>
-                    <li>Luzbelito - Patricio Rey y sus Redonditos de Ricota</li>
-                </ol>
-            </section>
+      <h2 id="titulo-habilidades">Habilidades</h2>
 
-        </article>
+      <section class="skill-block" data-categoria="tecnicas">
+        <div class="skill-chip-grupo">
+          <span class="skill-chip">🐍 Python</span>
+          <span class="skill-chip">🌐 HTML5 &amp; CSS3</span>
+          <span class="skill-chip">🧠 Lógica de programación</span>
+          <span class="skill-chip">🧩 Resolución de problemas</span>
+        </div>
+      </section>
+
+      <h2 id="titulo-peliculas">Películas favoritas</h2>
+
+      <section class="carousel" aria-labelledby="titulo-peliculas" data-etiqueta-slide="la película">
+        <button type="button" class="carousel-flecha carousel-flecha--prev" aria-label="Película anterior">&#10094;</button>
+
+        <div class="carousel-ventana">
+          <ul class="carousel-pista" id="carousel-pista-peliculas">
+            <li class="carousel-slide">
+              <h3>El Señor de los Anillos</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/_nZdmwHrcnw" title="El Señor de los Anillos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>El Gran Pez</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/JZTE078OmZg" title="El Gran Pez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Pulp Fiction</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/r-PSxjTR174" title="Pulp Fiction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="carousel-flecha carousel-flecha--next" aria-label="Película siguiente">&#10095;</button>
+
+        <div class="carousel-puntos" id="carousel-puntos-peliculas"></div>
+      </section>
+
+      <h2 id="titulo-discos">Discos favoritos</h2>
+
+      <section class="carousel" aria-labelledby="titulo-discos" data-etiqueta-slide="el disco">
+        <button type="button" class="carousel-flecha carousel-flecha--prev" aria-label="Disco anterior">&#10094;</button>
+
+        <div class="carousel-ventana">
+          <ul class="carousel-pista" id="carousel-pista-discos">
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/573TG9cHInMww2QgBeKqTy?utm_source=generator" title="Señales - Callejeros" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+              <p class="carousel-nota">Canción favorita: Creo</p>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/0lKGADKI9s71jBqJe5xYhn?utm_source=generator" title="Feed the Machine - Poor Man's Poison" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/5kk3PbroAezGBPucpoN4oC?utm_source=generator" title="Luzbelito - Patricio Rey y sus Redonditos de Ricota" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="carousel-flecha carousel-flecha--next" aria-label="Disco siguiente">&#10095;</button>
+
+        <div class="carousel-puntos" id="carousel-puntos-discos"></div>
+      </section>
     </main>
 
     <footer>
-        <p>Trabajo Práctico 1 — Front End 2026</p>
+      <p>&copy; 2026 BlueTech Proyecto. Todos los derechos reservados.</p>
     </footer>
-
-</body>
+  </body>
 </html>

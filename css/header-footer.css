@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Header y footer de la home (BlueTech), compartidos por las paginas de perfil.
+   Header: basado en la rama de Rocio. Footer: el de index.html de main.
+   Los breakpoints del .navbar (columna en mobile, fila desde 768px) viven en style.css.
+   ========================================================================== */
+:root {
+    --primary-blue: #0066cc;
+    --white: #ffffff;
+    --black: #111111;
+    --gray-dark: #333333;
+    --gray-light: #f4f4f6;
+    --gray-border: #dddddd;
+}
+
+body > header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray-border);
+}
+
+/* pegajoso solo en pantallas grandes: en mobile el header apilado ocupa demasiado alto */
+@media screen and (min-width: 768px) {
+    body > header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.logo span {
+    color: var(--primary-blue);
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--gray-dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+
+body > footer {
+    background-color: var(--gray-light);
+    border-top: 1px solid var(--gray-border);
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--gray-dark);
+    font-size: 0.9rem;
+}
+
+body > footer p {
+    margin: 0;
+}

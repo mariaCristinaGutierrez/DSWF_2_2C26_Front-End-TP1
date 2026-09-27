@@ -1,106 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil - María Cristina Gutiérrez</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/header-footer.css">
 
-    <script src="js/script.js" defer></script>
-</head>
-<body>
-    <!-- Navegación principal -->
+    <script src="js/maria.js" defer></script>
+    <script src="js/perfil.js" defer></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">🏠 Inicio</a>
-                </li>
-                <li>
-                    <a href="index.html#perfiles">👤 Perfiles</a>
-                </li>
-                <li>
-                    <a href="bitacora.html">📝 Bitácora</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">Blue<span>Tech</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#perfiles">Perfiles</a></li>
+          <li><a href="bitacora.html">Bitácora</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="contenedor-perfil">
+    <main>
+      <h1 class="nombre-brillante">María Cristina Gutiérrez</h1>
 
-        <article class="tarjeta-perfil">
+      <img class="avatar-perfil" src="img/maria/avatar.png" alt="Avatar de María Cristina" width="160" height="160">
 
-            <!-- Foto o Avatar -->
-            <div class="foto-perfil">
-                <img src="img/maria/avatar-maria.jpg.png"
-                     alt="Avatar de María Cristina"
-                     width="100">
-            </div>
+      <h2 id="titulo-sobre-mi">Sobre mí</h2>
 
-            <!-- Datos personales -->
-            <section class="encabezado-perfil">
-                <h1>María Cristina Gutiérrez</h1>
-                <p class="datos-basicos">
-                    📍 Buenos Aires, Argentina | 🎂 45 años
-                </p>
-            </section>
+      <section class="sobre-mi" aria-labelledby="titulo-sobre-mi">
+        <p class="sobre-mi-contacto">📍 Buenos Aires, Argentina &middot; 🎂 45 años
+          &middot; <a class="enlace-github" href="https://github.com/mariaCristinaGutierrez" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </section>
 
-            <!-- Habilidades -->
-            <section class="seccion-info">
-                <h2>Habilidades</h2>
+      <h2 id="titulo-saludo">¡Hola!</h2>
 
-                <ul class="lista-habilidades">
-                    <li>Organizar</li>
-                    <li>Cocinar</li>
-                    <li>Proactiva</li>
-                    <li>Paciente</li>
-                </ul>
-            </section>
+      <section class="sobre-mi" aria-labelledby="titulo-saludo">
+        <p class="sobre-mi-contacto">
+          <button type="button" class="btn btn-primary" onclick="saludarMaria()">Saludar</button>
+        </p>
+        <p id="mensaje-saludo"></p>
+      </section>
 
-            <!-- Películas favoritas -->
-            <section class="seccion-info">
-                <h2>Películas Favoritas</h2>
+      <h2 id="titulo-habilidades">Habilidades</h2>
 
-                <ol class="lista-favoritos">
-                    <li>Coco</li>
-                    <li>Ostwind</li>
-                    <li>IntensaMente</li>
-                </ol>
-            </section>
+      <section class="skill-block" data-categoria="personales">
+        <div class="skill-chip-grupo">
+          <span class="skill-chip">🗂️ Organización</span>
+          <span class="skill-chip">🍳 Cocina</span>
+          <span class="skill-chip">⚡ Proactividad</span>
+          <span class="skill-chip">🧘 Paciencia</span>
+        </div>
+      </section>
 
-            <!-- Discos favoritos -->
-            <section class="seccion-info">
-                <h2>Discos Favoritos</h2>
+      <h2 id="titulo-peliculas">Películas favoritas</h2>
 
-                <ol class="lista-favoritos">
-                    <li>Purpose - Justin Bieber</li>
-                    <li>Thriller - Michael Jackson</li>
-                    <li>Whitney - Whitney Houston</li>
-                </ol>
-            </section>
+      <section class="carousel" aria-labelledby="titulo-peliculas" data-etiqueta-slide="la película">
+        <button type="button" class="carousel-flecha carousel-flecha--prev" aria-label="Película anterior">&#10094;</button>
 
-            <!-- Función dinámica -->
-            <section class="seccion-info">
-                <h2>¡Hola!</h2>
+        <div class="carousel-ventana">
+          <ul class="carousel-pista" id="carousel-pista-peliculas">
+            <li class="carousel-slide">
+              <h3>Coco</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/h9Unr35ws-E" title="Coco" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>Ostwind</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/iAEwPpH_lUg" title="Ostwind" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <h3>IntensaMente</h3>
+              <div class="carousel-video">
+                <iframe src="https://www.youtube.com/embed/psdwQG-AvXI" title="IntensaMente" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-                <button type="button" onclick="saludarMaria()">
-                    Saludar
-                </button>
+        <button type="button" class="carousel-flecha carousel-flecha--next" aria-label="Película siguiente">&#10095;</button>
 
-                <p id="mensaje-saludo"></p>
-            </section>            
+        <div class="carousel-puntos" id="carousel-puntos-peliculas"></div>
+      </section>
 
-        </article>
+      <h2 id="titulo-discos">Discos favoritos</h2>
+
+      <section class="carousel" aria-labelledby="titulo-discos" data-etiqueta-slide="el disco">
+        <button type="button" class="carousel-flecha carousel-flecha--prev" aria-label="Disco anterior">&#10094;</button>
+
+        <div class="carousel-ventana">
+          <ul class="carousel-pista" id="carousel-pista-discos">
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/6Fr2rQkZ383FcMqFyT7yPr?utm_source=generator" title="Purpose - Justin Bieber" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/2ANVost0y2y52ema1E9xAZ?utm_source=generator" title="Thriller - Michael Jackson" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+            <li class="carousel-slide">
+              <div class="carousel-spotify">
+                <iframe src="https://open.spotify.com/embed/album/5Vdzprr5cOqXQo44eHeV7t?utm_source=generator" title="Whitney - Whitney Houston" width="100%" height="352" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button type="button" class="carousel-flecha carousel-flecha--next" aria-label="Disco siguiente">&#10095;</button>
+
+        <div class="carousel-puntos" id="carousel-puntos-discos"></div>
+      </section>
 
     </main>
 
     <footer>
-        <p>Trabajo Práctico 1 — Front End 2026</p>
+      <p>&copy; 2026 BlueTech Proyecto. Todos los derechos reservados.</p>
     </footer>
-</body>
+  </body>
 </html>

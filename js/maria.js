@@ -1,3 +1,4 @@
+// perfil de Maria: funcion del boton "Saludar"
 function saludarMaria() {
     const mensaje = document.getElementById("mensaje-saludo");
 
